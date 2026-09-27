@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        #menu{
+            margin: auto;
+        }
+        #menu{
+            display: flex;
+            text-align: flex;
+            margin: auto;
+            position: relative;
+        }
+        #menu > ul{
+            background-color: rgb(46, 46, 231);
+            padding: 0;
+           
+            text-align: none;
+        
+        }
+        #menu li ul{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 300px;
+        }
+        #menu li{
+            list-style-type: none;
+            padding: 0 1em;
+            text-align: center;
+            width: auto;
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+        }
+        #menu li a{
+            text-decoration: none;
+            color: white;
+            font-weight:  bold;
+            text-align: center;
+        }
+        #menu li:hover{
+            background-color: red;
+            left: 1;
+        }
+        /* menu_2*/
+        #menu .menu_2 li{
+           display: inline-block;
+
+        }
+        #menu .menu_2{
+            background-color: red;
+            display: none;
+            top: 50px;
+            left: 0;
+            width: 400px;
+            position: absolute;
+            padding: 0 1em;
+            
+        }
+        #menu li:hover .menu_2{
+            display: block;
+            left: 1;
+            
+        }
+       
+
+    </style>
+<body>
+  <div id="menu">
+    <ul>
+        <li><a href="">Chính trị-xã hội</a></li>
+        <li><a href="">Thế giới </a>
+            <ul class="menu_2">
+                <li><a href="">Thư viện pháp luật</a></li>
+                <li><a href="">Sống khỏe</a></li>
+                <li><a href="">Pháp luật</a></li>
+            </ul>
+        </li>
+        <li><a href="">Nhịp sống trẻ</a></li>
+        <li><a href="">Giáo dục</a></li>
+        <li><a href="">Kinh tế</a></li>
+
+    </ul>
+  </div>
+</body>
+</html>

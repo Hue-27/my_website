@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #menu {
+        width: 250px;
+    }
+    #menu ul{
+        background-color: blue;
+        padding: 0;
+        line-height: 50px;
+        list-style-type: none;
+        weight: 50px;
+        
+    }
+    #menu li{
+        padding: 0 1em;
+        color: white;
+        font-weight: bold;
+        position: relative;
+    }
+    
+    #menu .menu_2{
+        display: none;
+        background-color: red;
+        width: 250px;
+    }
+    #menu .menu_2 li{
+        display: block;
+    }
+    #menu li:hover{
+        background-color: red;
+    }
+    #menu li:hover .menu_2{
+        display: block;
+        position: absolute;
+        left: 250px;
+        top: 0;
+    }
+    #menu .menu_2 li:hover{
+        background-color: red;
+        
+    }
+</style>
+<body>
+    <div id="menu">
+        <ul >
+            <li>Chính trị-xã hội
+                <ul class="menu_2">
+                    <li>Thư viện pháp luật</li>
+                    <li>Sống khỏe</li>
+                    <li>Pháp luật</li>
+                </ul>
+            </li>
+            <li>Thế giới</li>
+            <li>Nhịp sống trẻ</li>
+            <li>Giáo dục</li>
+            <li>Kinh tế</li>
+        </ul>
+    </div>
+</body>
+</html>
